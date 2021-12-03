@@ -1,0 +1,6 @@
+[submodule "external/cge"]
+	path = external/cge
+	url = git@github.com:TheRetikGM/CursesGameEngine
+[submodule "external/Physics2D"]
+	path = external/Physics2D
+	url = git@github.com:TheRetikGM/Physics2D
