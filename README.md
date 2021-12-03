@@ -4,6 +4,7 @@ Demos which use my CGE library. Link https://github.com/theretikgm/CursesGameEng
 * CMake
 * Git
 * NCurses
+* Terminal with 256 color support
 ## Build:
     ./configure.sh
     ./build.sh
