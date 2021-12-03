@@ -38,3 +38,6 @@ add_subdirectory("physics")
 
 target_link_libraries(${PAINT_TARGET} ncurses)
 target_link_libraries(${PHYSICS_TARGET} ncurses Physics2D)
+
+# Create bin folder
+execute_process(COMMAND mkdir -p bin WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})

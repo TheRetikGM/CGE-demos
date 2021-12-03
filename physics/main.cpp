@@ -177,7 +177,7 @@ int main()
     TestGame* game = new TestGame();
     std::vector<std::string> err_buf;
 
-    if (game->Construct(-1, -1, -1, -1, true))
+    if (game->Construct(-1, -1, -1, -1, false))
         game->Start();
     else
     {
