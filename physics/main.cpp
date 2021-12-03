@@ -35,7 +35,7 @@ protected:
             "###################",
         };
 
-        glm::vec2 size = WinSize / glm::vec2(map[0].length(), map.size());
+        glm::vec2 size = glm::vec2(WinSize.x - 1, WinSize.y - 1) / glm::vec2(map[0].length(), map.size());
 
         for (int y = 0; y < map.size(); y++)
         {
