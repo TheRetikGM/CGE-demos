@@ -25,6 +25,7 @@ endif()
 
 set(PAINT_TARGET "paint_main")
 set(PHYSICS_TARGET "physics_main")
+set(DCLOCK_TARGET "dclock_main")
 
 include_directories(
 	PUBLIC include
@@ -35,9 +36,11 @@ include_directories(
 add_subdirectory("paint")
 add_subdirectory("external/Physics2D")
 add_subdirectory("physics")
+add_subdirectory("digital_clock")
 
 target_link_libraries(${PAINT_TARGET} ncurses)
 target_link_libraries(${PHYSICS_TARGET} ncurses Physics2D)
+target_link_libraries(${DCLOCK_TARGET} ncurses)
 
 # Create bin folder
 execute_process(COMMAND mkdir -p bin WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
